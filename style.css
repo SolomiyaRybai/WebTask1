@@ -1,32 +1,43 @@
-      html,
-      body,
-      header,
-      .carousel {
-        height: 60vh;
-      }
+.view {
+    background: url("https://artefact.org.ua/wp-content/uploads/2018/02/Zamok_Lyubarta_Artefakt.jpg")no-repeat center center;
+    background-size: cover;
+}
 
-      @media (max-width: 740px) {
-        html,
-        body,
-        header,
-        .carousel {
-          height: 100vh;
-        }
-      }
+.navbar {
+    background-color: transparent;
 
-      @media (min-width: 800px) and (max-width: 850px) {
-        html,
-        body,
-        header,
-        .carousel {
-          height: 100vh;
-        }
-      }
+}
 
-      @media (min-width: 800px) and (max-width: 850px) {
-              .navbar:not(.top-nav-collapse) {
-                  background: #1C2331!important;
-              }
-          }
-.view,body,html{height:100%}@media (max-width:740px){.full-page-intro{height:1000px}}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.navbar{background-color:rgba(0,0,0,.3)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+.top-nav-collapse {
+    background-color: #ffcdd2;
+}
 
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #ffcdd2;
+    }
+}
+
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+body {
+
+  background-color: #FFF5D8;
+}
+.carousel-inner {
+  display: inline-block;
+  max-height: 600px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.carousel-item {
+  max-height: auto;
+  overflow: hidden;
+  width: 100%;
+  }
